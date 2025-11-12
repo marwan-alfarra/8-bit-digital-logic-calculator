@@ -1,6 +1,6 @@
 # 8-Bit Digital Logic Calculator (Gates, Decoders, Multiplexers)
 
-<a href="https://youtu.be/UTghm5r-O4w">
+<a href="https://marwan-alfarra.github.io/8-bit-digital-logic-calculator/demo">
   <img src="docs/demo-thumb.png"
        alt="8-bit calculator demo"
        style="width:100%;max-width:100%;height:auto;border-radius:10px;border:1px solid #333;display:block">
