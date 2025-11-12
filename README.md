@@ -1,5 +1,7 @@
 # 8-Bit Digital Logic Calculator (Gates, Decoders, Multiplexers)
 
+[![Watch the demo](https://img.youtube.com/vi/UTghm5r-O4w/maxresdefault.jpg)](https://youtu.be/UTghm5r-O4w)
+
 This is an **8-bit calculator** project we built for a Digital Logic Design course.
 Operands are two 4-bit values (A, B). Results are up to 8 bits to accommodate multiplication. Subtraction currently supports
 positive results only. 
