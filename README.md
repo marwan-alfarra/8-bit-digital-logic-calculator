@@ -1,16 +1,16 @@
 # 8-Bit Digital Logic Calculator (Gates, Decoders, Multiplexers)
 ### 🎬 Demo
 <a href="https://marwan-alfarra.github.io/8-bit-digital-logic-calculator/demo">
-  <img src="assets/demo-thumb.png"
+  <img src="docs/png/demo-thumb.png"
        alt="8-bit calculator demo"
        style="width:100%;max-width:100%;height:auto;border-radius:10px;border:1px solid #333;display:block">
 </a>
 <p align="center"><i>Quick demo showing the calculator running basic operations inside the Digital simulator.</i></p>
 
-
 This is an **8-bit calculator** project we built for a Digital Logic Design course.
+
 Operands are two 4-bit values (A, B). Results are up to 8 bits to accommodate multiplication. Subtraction currently supports
-positive results only. 
+positive results only (no signed output yet). 
 
 Everything is done in the [Digital](https://github.com/hneemann/Digital) logic simulator using circuits only — no code.
 
@@ -51,8 +51,7 @@ The top-level calculators reuse several smaller circuits:
 - `FA_4B-4B.dig` – 4-bit subtractor block 
 - `Multiplier (015)C.dig`, `Multiplier (015)D.dig`, `Multiplier (015)M.dig` – multiplier variants 
 - `DDA 4B.dig`, `DDA 8B.dig` – binary-to-BCD conversion (Double Dabble Algorithm) 
-- `7-segment driver.dig` – binary/BCD to 7-segment driver 
-- `SEQ 0-7.dig` and a few others – sequence / testing / support circuits
+- `7-segment driver.dig` – binary/BCD to 7-segment driver and other support circuits
 
 File names are kept as they were in the original project so they still match the report and slides.
 
@@ -62,17 +61,20 @@ File names are kept as they were in the original project so they still match the
 
 ```text
 .
-├── circuits/                     # All Digital (.dig) circuit files
+├── circuits/       		                   # All Digital (.dig) circuit files
 │   ├── Project Calculator C.dig
 │   ├── Project Calculator D.dig
 │   ├── Project Calculator M.dig
 │   └── (...supporting subcircuits)
-├── docs/
-│   ├── 8 Bit Calculator.pdf      # Exported version of the slides (easy to view)
-│   ├── 8 Bit Calculator.pptx     # Original PowerPoint (editable)
-│   └── png/                      # Screenshots used in the docs
-└── README.md
-
+│
+├── docs/                                  # GitHub Page + project material
+│   ├── demo.html                          # Embedded YouTube demo page
+│   ├── 8 Bit Calculator.pdf               # Project documentation (PDF)
+│   ├── 8 Bit Calculator.pptx              # Presentation slides
+│   └── png/                               # Screenshots / thumbnail
+│       └── demo-thumb.png
+│
+└── README.md                              # Main project description
 ```
 
 ---
@@ -110,18 +112,19 @@ It also forced us to be more organized with subcircuits and naming, which is why
 
 ---
 
-## 👥 Project Context
+## 👥 Team & Course Context
 
 This calculator started as a group project for a Digital Logic Design course.
 
 We shared the work across the team, including:
 
--Designing and wiring the main calculator circuits
--Breaking the design into subcircuits (adders, multipliers, DDA, 7-segment driver)
--Preparing the documentation and slides
+- Designing and wiring the main calculator circuits
+- Breaking the design into subcircuits (adders, multipliers, DDA, 7-segment driver)
+- Preparing the documentation and slides
 
 I took the lead on keeping the design structured and making sure the different implementations (gates / decoder / mux) stayed consistent.
-This repo is my cleaned-up version of the project so it can be reused as a reference and shared publicly.
+
+This repo is a cleaned and reorganized version of our original project delivery so it can be reused as a reference and shared publicly.
 
 ---
 
