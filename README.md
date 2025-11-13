@@ -61,7 +61,7 @@ File names are kept as they were in the original project so they still match the
 
 ```text
 .
-├── circuits/       		                   # All Digital (.dig) circuit files
+├── circuits/       		               # All Digital (.dig) circuit files
 │   ├── Project Calculator C.dig
 │   ├── Project Calculator D.dig
 │   ├── Project Calculator M.dig
